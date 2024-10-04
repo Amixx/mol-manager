@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-//@ts-ignore
+//@ts-expect-error The modal package does not have types
 import Modal from 'react-modal'
 Modal.setAppElement('#root')
 import './style.css'

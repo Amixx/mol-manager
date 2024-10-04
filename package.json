@@ -1,6 +1,6 @@
 {
   "name": "mol-manager",
-  "description": "React web application that allows registering new suppliers with their associated chemical compound catalogs",
+  "description": "A React web application that allows registering new suppliers with their associated chemical compound catalogs",
   "version": "0.1.0",
   "private": true,
   "type": "module",

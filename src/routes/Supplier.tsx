@@ -1,9 +1,9 @@
-import { useContext, useState } from 'react'
+import { MouseEvent, useContext, useState } from 'react'
 import { SupplierContext } from '../state'
 import { useNavigate, useRouteLoaderData } from 'react-router-dom'
 import Button from '../components/Button'
 import { modalStyles } from '../utils/modal'
-//@ts-ignore
+//@ts-expect-error The modal package does not have types
 import Modal from 'react-modal'
 import { readCatalogFromFile } from '../utils/xlsx'
 
@@ -21,7 +21,7 @@ export default function Supplier() {
     setShowCatalogUploadModal(false)
     setCatalogFile(null)
   }
-  const addCatalog = async (e: MouseEvent) => {
+  const addCatalog = async (e: MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
     if (!catalogFile) return
 

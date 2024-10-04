@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { SupplierContext } from '../state'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
-//@ts-ignore
+//@ts-expect-error The modal package does not have types
 import Modal from 'react-modal'
 import { modalStyles } from '../utils/modal'
 Modal.setAppElement('#root')

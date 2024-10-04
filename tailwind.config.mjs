@@ -84,7 +84,8 @@ export default {
       h1: ['4rem', { lineHeight: '1.2' }]
     },
     container: {
-      center: true
+      center: true,
+      padding: '2rem'
     }
   },
   plugins: []

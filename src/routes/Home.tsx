@@ -4,20 +4,8 @@ import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 //@ts-ignore
 import Modal from 'react-modal'
+import { modalStyles } from '../utils'
 Modal.setAppElement('#root')
-
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    borderRadius: '4px',
-    padding: '16px'
-  }
-}
 
 export default function Home() {
   const supplierContext = useContext(SupplierContext)
@@ -89,7 +77,7 @@ export default function Home() {
         isOpen={showSupplierModal}
         onRequestClose={() => setShowSupplierModal(false)}
         contentLabel="Add supplier"
-        style={customStyles}
+        style={modalStyles}
       >
         <h2 className="text-h2">Add supplier</h2>
         <form className="mt-8 flex flex-col gap-2">

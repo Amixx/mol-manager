@@ -4,7 +4,7 @@ import './style.css'
 import HomePage from './routes/Home'
 import SupplierPage from './routes/Supplier'
 import { SupplierContext } from './state'
-import { Supplier } from './types/Supplier'
+import { Supplier } from './types'
 import ErrorPage from './routes/ErrorPage'
 import logo from './assets/logo.svg'
 

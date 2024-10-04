@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge'
 
 export default function Button(
   props: PropsWithChildren<{
-    onClick: () => void
+    onClick: (e: any) => void
     className?: string
     variant?: 'primary' | 'secondary'
     title?: string

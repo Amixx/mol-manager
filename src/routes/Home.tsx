@@ -4,7 +4,7 @@ import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 //@ts-ignore
 import Modal from 'react-modal'
-import { modalStyles } from '../utils'
+import { modalStyles } from '../utils/modal'
 Modal.setAppElement('#root')
 
 export default function Home() {
@@ -80,12 +80,12 @@ export default function Home() {
         style={modalStyles}
       >
         <h2 className="text-h2">Add supplier</h2>
-        <form className="mt-8 flex flex-col gap-2">
+        <form className="mt-8 flex flex-col gap-4">
           <div>
-            <label className="flex items-center gap-4">
+            <label className="flex w-full flex-col items-start">
               Name
               <input
-                className="flex-1 rounded border border-dark-light bg-light px-2 py-1"
+                className="w-full flex-1 rounded border border-dark-pale px-2 py-1"
                 value={newSupplier.name}
                 onChange={(e) =>
                   setNewSupplier({ ...newSupplier, name: e.target.value })
@@ -95,10 +95,10 @@ export default function Home() {
             </label>
           </div>
           <div>
-            <label className="flex items-center gap-4">
+            <label className="flex w-full flex-col items-start">
               Country
               <input
-                className="flex-1 rounded border border-dark-light bg-light px-2 py-1"
+                className="w-full flex-1 rounded border border-dark-pale px-2 py-1"
                 value={newSupplier.country}
                 onChange={(e) =>
                   setNewSupplier({ ...newSupplier, country: e.target.value })
@@ -108,10 +108,10 @@ export default function Home() {
             </label>
           </div>
           <div>
-            <label className="flex items-center gap-4">
+            <label className="flex w-full flex-col items-start">
               Website URL
               <input
-                className="flex-1 rounded border border-dark-light bg-light px-2 py-1"
+                className="w-full flex-1 rounded border border-dark-pale px-2 py-1"
                 value={newSupplier.websiteUrl}
                 onChange={(e) =>
                   setNewSupplier({ ...newSupplier, websiteUrl: e.target.value })
